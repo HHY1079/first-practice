@@ -1,35 +1,61 @@
 <!doctype html>
 <html>
-<head>
-  <title>HarryPotter - Hogwart(Gryffindor)</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1><a href="1hogwart.html">Hogwart</a></h1>
-<div id="grid">
-  <ol>
-    <li><a href="2Gryffindor.html" style="color:red;text-decoration:underline;font-size:20px">Gryffindor</a></li>
-    <li><a href="3Hufflepuff.html">Hufflepuff</a></li>
-    <li><a href="4Ravenclaw.html">Ravenclaw</a></li>
-    <li><a href="5Slytherin.html">Slytherin</a></li>
-  </ol>
-  <div id="article">
-  <h2>About <a href="https://namu.wiki/w/%EA%B7%B8%EB%A6%AC%ED%95%80%EB%8F%84%EB%A5%B4"
-    target="_blank" title="griffindor namuwiki" style="color:red;text-decoration:underline;">Gryffindor</a></h2>
-  <div id="picture"><img src="gryffindor.jpg" with="100%"></div>
-  <p>영화에서의 확실한 발음은 그리핀도어이다. 영어에서는 모음화 R 현상이 나타나 단어 끝
-  R 발음이 모음처럼 발음되기 때문. 하지만 이는 다른 기숙사와 마찬가지로 20주년 개정판에서도 수정되지 않았다.
-  이미 기존의 표기가 너무 뿌리깊게 박혀있기 때문.</p>
-  <p>마법 세계의 우수한 마법사를 다수 배출했으며, 현재 기숙사 사감은 미네르바 맥고나걸. 그녀는 7권에서 알버스 덤블도어 사후 벌어진 제2차 마법사 전쟁 이후, 호그와트 교장직을 겸임했다.
-  주인공 3인방의 기숙사인 만큼, 거의 모든 이야기가 이 기숙사를 중심으로 진행된다.
-  세계관 최고의 마법사인 알버스 덤블도어를 배출해 낸 기숙사다 보니 내적으로나 외적으로나 인식이 좋다.
-  헤르미온느 그레인저도 호그와트 입학 당시 정보를 수집해 그리핀도르를 가장 좋은 기숙사로 인지하고 있었으며,
-  해리 포터 역시 자신이 그리핀도르 기숙사 소속이라는 사실을 항상 자랑스러워하고 긍지로 여기고 있다.
-  여담으로 포터모어 기숙사 소개에서 다른 기숙사들은 자신들에 대한 안 좋은 통념이 사실이 아님을 해명하거나,
-  장점을 어필하려고 구구절절 장황하게 설명을 늘어놓는 데 반해 그리핀도르의 소개는
-  그냥 "우리 기숙사 출신 중에 덤블도어 있음. 더 이상 설명 안 해도 되겠지?" 이걸로 땡친다.</p>
-  </div>
-</div>
-</body>
+  <head>
+    <title>HarryPotter - Hogwart(Gryffindor)</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1><a href="1hogwart.html">Hogwart</a></h1>
+    <input type="button" value="night" onclick="
+    var target = document.querySelector('body')
+    if(this.value === 'night'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = 'day';
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i<alist.length){
+        alist[i].style.color='red';
+        i = i + 1
+      }
+    } else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      this.value = 'night';
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i<alist.length){
+        alist[i].style.color = 'black';
+        i = i + 1
+      }
+    }
+    ">
+    <div id="grid">
+      <ol>
+        <li><a href="2Gryffindor.html" style="color:red;text-decoration:underline;font-size:20px">Gryffindor</a></li>
+        <li><a href="3Hufflepuff.html">Hufflepuff</a></li>
+        <li><a href="4Ravenclaw.html">Ravenclaw</a></li>
+        <li><a href="5Slytherin.html">Slytherin</a></li>
+      </ol>
+      <div id="article">
+      <h2>About <a href="https://namu.wiki/w/%EA%B7%B8%EB%A6%AC%ED%95%80%EB%8F%84%EB%A5%B4"
+        target="_blank" title="griffindor namuwiki" style="color:red;text-decoration:underline;">Gryffindor</a></h2>
+      <div id="picture"><img src="gryffindor.jpg" with="100%"></div>
+      <p>영화에서의 확실한 발음은 그리핀도어이다. 영어에서는 모음화 R 현상이 나타나 단어 끝
+      R 발음이 모음처럼 발음되기 때문. 하지만 이는 다른 기숙사와 마찬가지로 20주년 개정판에서도 수정되지 않았다.
+      이미 기존의 표기가 너무 뿌리깊게 박혀있기 때문.</p>
+      <p>마법 세계의 우수한 마법사를 다수 배출했으며, 현재 기숙사 사감은 미네르바 맥고나걸. 그녀는 7권에서 알버스 덤블도어 사후 벌어진 제2차 마법사 전쟁 이후, 호그와트 교장직을 겸임했다.
+      주인공 3인방의 기숙사인 만큼, 거의 모든 이야기가 이 기숙사를 중심으로 진행된다.
+      세계관 최고의 마법사인 알버스 덤블도어를 배출해 낸 기숙사다 보니 내적으로나 외적으로나 인식이 좋다.
+      헤르미온느 그레인저도 호그와트 입학 당시 정보를 수집해 그리핀도르를 가장 좋은 기숙사로 인지하고 있었으며,
+      해리 포터 역시 자신이 그리핀도르 기숙사 소속이라는 사실을 항상 자랑스러워하고 긍지로 여기고 있다.
+      여담으로 포터모어 기숙사 소개에서 다른 기숙사들은 자신들에 대한 안 좋은 통념이 사실이 아님을 해명하거나,
+      장점을 어필하려고 구구절절 장황하게 설명을 늘어놓는 데 반해 그리핀도르의 소개는
+      그냥 "우리 기숙사 출신 중에 덤블도어 있음. 더 이상 설명 안 해도 되겠지?" 이걸로 땡친다.</p>
+      </div>
+    </div>
+  </body>
 </html>

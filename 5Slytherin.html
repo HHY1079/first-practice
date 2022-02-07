@@ -1,38 +1,64 @@
 <!doctype html>
 <html>
-<head>
-  <title>HarryPotter - Hogwart(Slytherin)</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1><a href="1hogwart.html">Hogwart</a></h1>
-<div id="grid">
-  <ol>
-    <li><a href="2Gryffindor.html">Gryffindor</a></li>
-    <li><a href="3Hufflepuff.html">Hufflepuff</a></li>
-    <li><a href="4Ravenclaw.html">Ravenclaw</a></li>
-    <li><a href="5Slytherin.html" style="color:darkgreen; text-decoration:underline;font-size:20px">Slytherin</a></li>
-  </ol>
-  <div id="article">
-    <h2>About <a href="https://namu.wiki/w/%EC%8A%AC%EB%A6%AC%EB%8D%B0%EB%A6%B0"
-      target="_blank" title="slytherin namuwiki" style="color:darkgreen;text-decoration:underline;">Slytherin</a></h2>
-    <div id="picture"><img src="slytherin.jpg" with="100%"></div>
-    <p>해리 포터 시리즈에 등장하는 영국 마법학교인 호그와트의 4대 기숙사 중 하나로, 목적을 달성하기 위해선 수단과 방법을
-       가리지 않을 야심가들과 재간꾼들을 위한 기숙사이다.</p>
-    <p>창립자 때문인지 이 기숙사는 순수혈통주의자의 비율이 많다. 이 기숙사엔 최소 7권까지는 혼혈은 있어도 머글 태생은
-      없었다. 하지만 생각해 보면 비중이 높은 슬리데린 인물들 중에 혼혈만 셋이다.(톰 마볼로 리들, 세베루스 스네이프,
-      덜로리스 엄브리지)</p>
-    <p>이 기숙사에 속한 이들은 자신의 능력을 여러 사람에게 증명하려는 경향이 있다. 이 탓인지 권력을 추구하는 이가 많은 편.
-       권력을 추구한다는 게 무조건 나쁜 건 아니지만 졸업생 중에 죽음을 먹는 자가 되거나, 그게 아니더라도 나쁜 쪽으로 수단과
-       방법을 가리지 않는 이들이 많다. 유독 악인들을 많이 배출했기 때문에 평판은 대체로 나쁘다. 론과 해그리드 등등도 나쁜
-       사람들은 모두 다 슬리데린 출신들이었다고 해리에게 경고를 했고 마법사의 돌에서도 그리핀도르가 많이 감점되어서 다른
-      기숙사에 있는 애들도 그리핀도르를 미워하게 되었지만, 그리핀도르가 7년 만에 슬리데린의 우승 독주를 저지하고 기숙사
-      우승컵을 탈환하게 되자, 다른 기숙사인 래번클로와 후플푸프마저 축하해 줬을 정도다. 7편에서도 슬리데린을 막으려고
-      그리핀도르와 후플푸프, 래번클로가 모두 일어나서 지팡이를 겨눴으니 이 정도면 왕따 수준이다. 3편에서 있었던 기숙사
-      간의 퀴디치 리그 결승전에서 래번클로와 후플푸프도 그리핀도르의 상징색이 들어간 장식물이나 응원 도구를 흔들며
-      그리핀도르를 응원했다.</p>
-    </div>
-  </div>
-  </body>
+  <head>
+    <title>HarryPotter - Hogwart(Slytherin)</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1><a href="1hogwart.html">Hogwart</a></h1>
+    <input type="button" value="night" onclick="
+    var target = document.querySelector('body')
+    if(this.value === 'night'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = 'day';
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i<alist.length){
+        alist[i].style.color='darkgreen';
+        i = i + 1
+      }
+    } else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      this.value = 'night';
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i<alist.length){
+        alist[i].style.color='black';
+        i = i + 1
+      }
+    }
+    ">
+    <div id="grid">
+      <ol>
+        <li><a href="2Gryffindor.html">Gryffindor</a></li>
+        <li><a href="3Hufflepuff.html">Hufflepuff</a></li>
+        <li><a href="4Ravenclaw.html">Ravenclaw</a></li>
+        <li><a href="5Slytherin.html" style="color:darkgreen; text-decoration:underline;font-size:20px">Slytherin</a></li>
+      </ol>
+      <div id="article">
+        <h2>About <a href="https://namu.wiki/w/%EC%8A%AC%EB%A6%AC%EB%8D%B0%EB%A6%B0"
+          target="_blank" title="slytherin namuwiki" style="color:darkgreen;text-decoration:underline;">Slytherin</a></h2>
+        <div id="picture"><img src="slytherin.jpg" with="100%"></div>
+        <p>해리 포터 시리즈에 등장하는 영국 마법학교인 호그와트의 4대 기숙사 중 하나로, 목적을 달성하기 위해선 수단과 방법을
+           가리지 않을 야심가들과 재간꾼들을 위한 기숙사이다.</p>
+        <p>창립자 때문인지 이 기숙사는 순수혈통주의자의 비율이 많다. 이 기숙사엔 최소 7권까지는 혼혈은 있어도 머글 태생은
+          없었다. 하지만 생각해 보면 비중이 높은 슬리데린 인물들 중에 혼혈만 셋이다.(톰 마볼로 리들, 세베루스 스네이프,
+          덜로리스 엄브리지)</p>
+        <p>이 기숙사에 속한 이들은 자신의 능력을 여러 사람에게 증명하려는 경향이 있다. 이 탓인지 권력을 추구하는 이가 많은 편.
+           권력을 추구한다는 게 무조건 나쁜 건 아니지만 졸업생 중에 죽음을 먹는 자가 되거나, 그게 아니더라도 나쁜 쪽으로 수단과
+           방법을 가리지 않는 이들이 많다. 유독 악인들을 많이 배출했기 때문에 평판은 대체로 나쁘다. 론과 해그리드 등등도 나쁜
+           사람들은 모두 다 슬리데린 출신들이었다고 해리에게 경고를 했고 마법사의 돌에서도 그리핀도르가 많이 감점되어서 다른
+          기숙사에 있는 애들도 그리핀도르를 미워하게 되었지만, 그리핀도르가 7년 만에 슬리데린의 우승 독주를 저지하고 기숙사
+          우승컵을 탈환하게 되자, 다른 기숙사인 래번클로와 후플푸프마저 축하해 줬을 정도다. 7편에서도 슬리데린을 막으려고
+          그리핀도르와 후플푸프, 래번클로가 모두 일어나서 지팡이를 겨눴으니 이 정도면 왕따 수준이다. 3편에서 있었던 기숙사
+          간의 퀴디치 리그 결승전에서 래번클로와 후플푸프도 그리핀도르의 상징색이 들어간 장식물이나 응원 도구를 흔들며
+          그리핀도르를 응원했다.</p>
+        </div>
+      </div>
+    </body>
   </html>
